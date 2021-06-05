@@ -52,7 +52,7 @@
     margin-top: 2%;
     text-align: center;
 }
-@media (max-width: 1380px) {
+@media (max-width: 2000px) {
     .profilebuilder{
         width: 30%;
     }
