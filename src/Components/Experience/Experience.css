@@ -1,0 +1,75 @@
+.experience-container-main{
+    display: block;
+    padding: 2%;
+}
+.experience-container{
+    margin-top: 5%;
+}
+.experience-header{
+    text-align: center;
+    font-size: 30px;
+}
+.powerschool{
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 2px 16px;
+    margin-left: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A3BCB6;
+}
+.powerschool:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
+}
+.powerschool-container{
+    display: block;
+}
+.powerschool-header-container{
+    padding: 2%;
+    margin-top: 2%;
+}
+.internship-year{
+    margin-left: 0%;
+}
+@media (max-width: 1380px) {
+    .powerschool-header-container{
+        background-color: #39603D;
+        color: white;
+        padding : 1%;
+        border-radius: 5px;
+        margin-top: 1%;
+    }
+    .powerschool-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .internship-year{
+        margin-left: 74%;
+    }
+}
+@media (max-width: 1250px) {
+    .powerschool-container{
+        display: block;
+    }
+    .powerschool-header-container{
+        padding: 2%;
+        margin-top: 2%;
+    }
+    .internship-year{
+        margin-left: 0%;
+    }
+}
+@media (max-width: 768px) {
+    .powerschool-container{
+        display: block;
+    }   
+    .internship-year{
+        margin-left: 0;
+    }
+    .powerschool-header-container{
+        padding: 2%;
+        margin-top: 2%;
+    }
+}

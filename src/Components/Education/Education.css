@@ -1,0 +1,63 @@
+.education-container-main{
+    display: block;
+    padding: 2%;
+}
+.education-container{
+    margin-top: 5%;
+}
+.education-header{
+    text-align: center;
+    font-size: 30px;
+}
+.vit{
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 2px 16px;
+    margin-left: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A3BCB6;
+}
+.vit:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
+}
+.vit-container{
+    display: block;
+}
+.header-container{
+    padding: 2%;
+    margin-top: 2%;
+}
+.year{
+    margin-left: 0%;
+}
+@media (max-width: 1380px) {
+    .vit-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .header-container{
+        background-color: #39603D;
+        color: white;
+        padding : 1%;
+        border-radius: 5px;
+        margin-top: 1%;
+    }
+    .year{
+        margin-left: 59%;
+    }
+}
+@media (max-width: 768px) {
+    .vit-container{
+        display: block;
+    }   
+    .year{
+        margin-left: 0;
+    }
+    .header-container{
+        padding: 2%;
+        margin-top: 2%;
+    }
+}

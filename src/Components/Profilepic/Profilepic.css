@@ -1,0 +1,77 @@
+img{
+    width : 90%;
+    height : 90%;
+    padding : 5%;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+.imgleft{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 5%;
+    width: 30%;
+    height: 30%;
+    /* background-color: slateblue; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    background-color: #A3BCB6;
+}
+.picturecenter{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #3C403D;
+}
+.picturecenter > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.imagename{
+    text-align: center;
+    padding-bottom: 5%;
+    font-family: 'Homemade Apple';
+}
+.headername{
+    font-size: 70px;
+    font-weight: bold;
+}
+.header-p{
+  text-align: justify;
+}
+@media (max-width: 1380px) {
+    .headername{
+      font-size: 50px;
+    }
+    .header-p {
+      margin-top: -4%;
+      font-size: 30px;
+    }
+  }
+@media (max-width: 768px) {
+  .headername {
+    font-size: 36px;
+    text-align: center;
+  }
+  .imgleft{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 75%;
+  }
+  .header-p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -8%;
+  }
+  .main-container {
+    display: block;
+  }
+  .picturecenter{
+      margin-top: 15%;
+      width: 75%;
+  }
+}
