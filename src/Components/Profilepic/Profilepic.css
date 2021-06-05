@@ -42,7 +42,7 @@ img{
 .header-p{
   text-align: justify;
 }
-@media (max-width: 2000px) {
+@media (max-width: 2600px) {
     .headername{
       font-size: 50px;
     }
