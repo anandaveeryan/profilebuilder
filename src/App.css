@@ -4,6 +4,7 @@
 
 html,body{
   background-color: #DADED4;
+  scroll-behavior: smooth; 
 }
 
 .App-logo {
