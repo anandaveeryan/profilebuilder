@@ -26,6 +26,12 @@ img{
     text-align: center;
     color: #3C403D;
 }
+.dark{
+  color :white;
+}
+.dark1{
+  background-color: #e94560;
+}
 .picturecenter > * {
   flex: 1;
   margin-bottom: 30px;

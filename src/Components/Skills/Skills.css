@@ -48,6 +48,12 @@
 .cloud:hover{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
 }
+.dark1{
+    background-color: #16213e;
+}
+.dark1:hover{
+    box-shadow: 0 16px 32px 0 rgba(255, 255, 255, 0.4);
+}
 .header{
     padding: 2%;
     text-align: center;
@@ -57,6 +63,10 @@
     background-color: #39603D;
     color: white;
     border-radius: 5px;
+}
+.dark2{
+    background-color: #0f3460;
+    border-bottom-color: #0f3460;
 }
 @media (max-width: 2600px) {
     .datascience{

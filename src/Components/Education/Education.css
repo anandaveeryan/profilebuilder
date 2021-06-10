@@ -2,6 +2,10 @@
     display: block;
     padding: 2%;
 }
+.header-container{
+    padding: 2%;
+    margin-top: 2%;
+}
 .education-container{
     margin-top: 5%;
 }
@@ -20,15 +24,20 @@
     margin-right: auto;
     background-color: #A3BCB6;
 }
+.dark1{
+    background-color: #16213e;
+}
+.dark2{
+    background-color: #0f3460;
+}
 .vit:hover{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
 }
+.dark1:hover{
+    box-shadow: 0 16px 32px 0 rgba(255, 255, 255, 0.4);
+}
 .vit-container{
     display: block;
-}
-.header-container{
-    padding: 2%;
-    margin-top: 2%;
 }
 .year{
     margin-left: 0%;
@@ -44,6 +53,9 @@
         padding : 1%;
         border-radius: 5px;
         margin-top: 1%;
+    }
+    .dark2{
+        background-color: #0f3460;
     }
     .year{
         margin-left: 59%;

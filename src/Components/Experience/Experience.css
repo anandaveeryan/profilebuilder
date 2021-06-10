@@ -20,8 +20,14 @@
     margin-right: auto;
     background-color: #A3BCB6;
 }
+.dark1{
+    background-color: #16213e;
+}
 .powerschool:hover{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
+}
+.dark1:hover{
+    box-shadow: 0 16px 32px 0 rgba(255, 255, 255, 0.4);
 }
 .powerschool-container{
     display: block;
@@ -32,6 +38,9 @@
 }
 .internship-year{
     margin-left: 0%;
+}
+.dark2{
+    background-color: #0f3460;
 }
 @media (max-width: 2600px) {
     .powerschool-header-container{
@@ -47,6 +56,9 @@
     }
     .internship-year{
         margin-left: 74%;
+    }
+    .dark2{
+        background-color: #0f3460;
     }
 }
 @media (max-width: 1250px) {

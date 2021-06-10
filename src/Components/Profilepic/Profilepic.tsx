@@ -2,13 +2,17 @@ import React from 'react';
 import './Profilepic.css';
 import {details} from '../../information.js';
 
-function Profilepic() {
+interface Props{
+  isDark : boolean
+}
+
+function Profilepic(props : Props) {
   return (
     <div className="main-container">
-      <div className="imgleft">
+      <div className={props.isDark?"imgleft dark1":"imgleft"}>
         <img src={process.env.PUBLIC_URL + '/anand1.jpg'} alt="ProfilePic" />
       </div>
-      <div className="picturecenter">
+      <div className={props.isDark?"picturecenter dark":"picturecenter"}>
         <div className="headername">
           {details.name}
         </div>

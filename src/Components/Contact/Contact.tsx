@@ -3,7 +3,11 @@ import './Contact.css';
 import {socialmedia} from '../../information.js';
 import { Fade } from "react-reveal";
 
-function Contact() {
+interface Props{
+    isDark : boolean
+}
+
+function Contact(props:Props) {
   return (
     <div className="contactme-container" id="contactme-container">
         <div className="contactme-header">

@@ -3,7 +3,11 @@ import './Experience.css';
 import {internship} from '../../information.js';
 import { Fade } from "react-reveal";
 
-function Experience() {
+interface Props{
+    isDark : boolean
+}
+
+function Experience(props: Props) {
   return (
     <div className="experience-container" id="experience-container">
     <div className="experience-header">
@@ -11,8 +15,8 @@ function Experience() {
     </div>
     <div className="experience-container-main">
         <Fade left duration={2000}>
-            <div className="powerschool">
-                <div className="powerschool-header-container">
+            <div className={props.isDark?"powerschool dark1":"powerschool"}>
+                <div className={props.isDark?"powerschool-header-container dark2":"powerschool-header-container"}>
                     <div className='powerschool-container'>
                         <div className="companyname">
                             Powerschool

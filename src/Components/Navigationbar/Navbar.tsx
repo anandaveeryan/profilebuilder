@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useState,useContext} from 'react';
 import './Navbar.css';
+import StyleContext from "../../contexts/StyleContext";
 
-function Navbar() {
+interface Props{
+  isDark : boolean,
+  toggleState: (e: React.ChangeEvent, title: boolean) => void;
+}
+
+function Navbar(props:Props) {
+  //const {isDark} = useContext(StyleContext);
+  const [isChecked, setChecked] = useState(false);
+  //const styleContext = useContext(StyleContext);  
   return (
     <div>
-      <div className="navbar">
+      <div className={props.isDark?"navbar dark":"navbar"}>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
+            <label className={props.isDark?"menu-icon":"menu-icon"} htmlFor="menu-btn">
+              <span className={props.isDark?"navicon":"navicon"}></span>
             </label>
         <ul className="menu">
             <li>
@@ -24,6 +33,14 @@ function Navbar() {
             </li>
             <li>
                 <a href="#contactme-container">Contact Me</a>
+            </li>
+            <li>
+            <div className="toggle-container">
+            <label className="switch">
+              <input type="checkbox" onChange={(e) => props.toggleState(e, props.isDark)}/>
+              <span className="slider round"></span>
+              </label>
+            </div>
             </li>
         </ul>
       </div>

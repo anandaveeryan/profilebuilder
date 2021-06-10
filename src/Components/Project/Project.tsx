@@ -3,7 +3,11 @@ import './Project.css';
 import { cricvisual, expandoverflow, profilebuilder } from '../../information.js';
 import { Fade } from "react-reveal";
 
-function Project() {
+interface Props{
+    isDark : boolean
+}
+
+function Project(props:Props) {
   return (
     <div className="projects-container" id="projects-container">
     <div className="projects-header">
@@ -11,8 +15,8 @@ function Project() {
     </div>
     <div className="projects-container-main">
         <Fade left duration={2000}>
-            <div className="profilebuilder">
-                <div className="header">
+            <div className={props.isDark?"profilebuilder dark1":"profilebuilder"}>
+                <div className={props.isDark?"header dark2":"header"}>
                     Portfolio Website
                 </div>
                 <ul>
@@ -22,8 +26,8 @@ function Project() {
             </div>
         </Fade>
         <Fade bottom duration={2000}>
-            <div className="expandoverflow">
-                <div className="header">
+            <div className={props.isDark?"expandoverflow dark1":"expandoverflow"}>
+                <div className={props.isDark?"header dark2":"header"}>
                     Stackoverflow Badge sharing website
                 </div>
                 <ul>
@@ -34,8 +38,8 @@ function Project() {
             </div>
         </Fade>
         <Fade right duration={2000}>
-            <div className="cricvisual">
-                <div className="header">
+            <div className={props.isDark?"cricvisual dark1":"cricvisual"}>
+                <div className={props.isDark?"header dark2":"header"}>
                     Cricket Analytics Website
                 </div>
                 <ul>

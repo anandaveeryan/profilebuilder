@@ -3,7 +3,11 @@ import './Education.css';
 import {education} from '../../information.js';
 import { Fade } from "react-reveal";
 
-function Education() {
+interface Props{
+    isDark : boolean
+}
+
+function Education(props:Props) {
   return (
     <div className="education-container" id="education-container">
         <div className="education-header">
@@ -11,8 +15,8 @@ function Education() {
         </div>
         <div className="education-container-main">
             <Fade left duration={2000}>
-                <div className="vit">
-                    <div className="header-container">
+                <div className={props.isDark?"vit dark1":"vit"}>
+                    <div className={props.isDark?"header-container dark2":"header-container"}>
                     <div className='vit-container'>
                         <div className="collegename">
                             Vellore Institute of Technology
