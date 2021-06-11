@@ -7,7 +7,6 @@ import Experience from './Experience/Experience';
 import Project from './Project/Project';
 import Contact from './Contact/Contact';
 import Topbutton from './Topbutton/Topbutton';
-import {StyleProvider} from "../contexts/StyleContext";
 import './Main.css';
 
 interface Props{
@@ -30,7 +29,7 @@ function Main(props:Props) {
       <Experience isDark={isDark}/>
       <Project isDark={isDark}/>
       <Contact isDark={isDark}/>
-      <Topbutton/>
+      <Topbutton isDark={isDark}/>
     </div>
   );
 }

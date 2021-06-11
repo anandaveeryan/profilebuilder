@@ -1,6 +1,6 @@
 const details = {
     name : "Anandaveeryan",
-    subTitle : "Aspiring, Hardworking student having keen interest in the development of applications and websites. Eager to learn about new technologies and using them for helping the society.",
+    subTitle : "Aspiring, Hardworking person having keen interest in the development of applications and websites. Eager to learn about new technologies and using them for helping the society.",
     subTitle1: "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact."
 }
 const datascienceskills= {

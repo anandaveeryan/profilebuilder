@@ -36,6 +36,11 @@
   background-color: #A3BCB6;
 }
 
+.dark li a:hover,
+.dark .menu-btn:hover {
+  background-color: #0f3460;
+}
+
 .navbar .menu {
   clear: both;
   max-height: 0;
@@ -108,6 +113,15 @@ transform: rotate(45deg);
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 top: 0;
+}
+
+.navbar .dark-menu-icon .dark-navicon{
+  background: white;
+}
+
+.navbar .dark-menu-icon .dark-navicon:before,
+.navbar .dark-menu-icon .dark-navicon:after {
+  background: white;
 }
 
 .toggle-container{

@@ -1,6 +1,5 @@
-import React, {useState,useContext} from 'react';
+import React from 'react';
 import './Navbar.css';
-import StyleContext from "../../contexts/StyleContext";
 
 interface Props{
   isDark : boolean,
@@ -9,14 +8,14 @@ interface Props{
 
 function Navbar(props:Props) {
   //const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(false);
+  //const [isChecked, setChecked] = useState(false);
   //const styleContext = useContext(StyleContext);  
   return (
     <div>
       <div className={props.isDark?"navbar dark":"navbar"}>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className={props.isDark?"menu-icon":"menu-icon"} htmlFor="menu-btn">
-              <span className={props.isDark?"navicon":"navicon"}></span>
+            <label className={props.isDark?"menu-icon dark-menu-icon":"menu-icon"} htmlFor="menu-btn">
+              <span className={props.isDark?"navicon dark-navicon":"navicon"}></span>
             </label>
         <ul className="menu">
             <li>

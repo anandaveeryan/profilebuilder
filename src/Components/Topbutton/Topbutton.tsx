@@ -1,15 +1,12 @@
 import React from 'react';
 import './Topbutton.css';
 
-interface SelectProtected {
-    readonly wrapperElement : HTMLButtonElement;
+
+interface Props{
+  isDark : boolean
 }
 
-const selectProtected: SelectProtected = {
-    wrapperElement : document.createElement("button")
-};
-
-function Topbutton() {
+function Topbutton(props:Props) {
     function TopEvent() {
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0; 
@@ -35,7 +32,7 @@ function Topbutton() {
         scrollFunction();
       }; 
   return (
-    <button onClick={TopEvent} id="topButton" title="Go to top">
+    <button onClick={TopEvent} className={props.isDark?"topButton darkButton":"topButton"} id="topButton" title="Go to top">
       <i className="fas fa-angle-double-up"></i>
     </button>
   );
