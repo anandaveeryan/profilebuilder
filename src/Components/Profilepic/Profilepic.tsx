@@ -10,7 +10,7 @@ function Profilepic(props : Props) {
   return (
     <div className="main-container">
       <div className={props.isDark?"imgleft dark1":"imgleft"}>
-        <img src={process.env.PUBLIC_URL + '/anand1.jpg'} alt="ProfilePic" />
+        <img src={process.env.PUBLIC_URL + '/anand.jpg'} alt="ProfilePic" />
       </div>
       <div className={props.isDark?"picturecenter dark":"picturecenter"}>
         <div className="headername">
